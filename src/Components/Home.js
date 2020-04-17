@@ -12,6 +12,7 @@ class HomeContainer extends React.Component {
         return (
             <div className='background'>
                 <h1>Big Ass Pumpkins</h1>
+                <h4>This is going to be harder than I thought</h4>
 
 
             </div>
@@ -20,4 +21,4 @@ class HomeContainer extends React.Component {
 
 }
 
-export default connect(HomeContainer);
+export default HomeContainer;
