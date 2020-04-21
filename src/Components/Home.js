@@ -1,5 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 
 class HomeContainer extends React.Component {
