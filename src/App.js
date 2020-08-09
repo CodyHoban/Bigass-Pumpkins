@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import 'fontsource-roboto';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,25 +11,32 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home';
 import About from './Components/About';
+import Menu from'./Components/Menu';
+
+
+
+
 
 
 function App() {
   return (
     <Router> 
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              
-            </li>
-          </ul>
-        </nav>
+        <Menu/>
+        <button>
+          Nav
+        </button>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+        
+              </li>
+            </ul>
       </div>
       <Switch>
 
@@ -41,6 +50,6 @@ function App() {
       </Switch> 
     </Router>
   );
-}
+};
 
 export default App;
