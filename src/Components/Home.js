@@ -19,7 +19,7 @@ class HomeContainer extends React.Component {
     render() {
         return (
             <div className='background'>
-                <h1>Big Ass Pumpkins</h1>
+                <h1>Big <span className="Menu-link">Ass</span> Pumpkins</h1>
                 <h4>This is going to be harder than I thought</h4>
 
 

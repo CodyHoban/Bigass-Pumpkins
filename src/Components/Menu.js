@@ -4,6 +4,12 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import 'fontsource-roboto';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 
@@ -30,8 +36,8 @@ export default function SimpleMenu() {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>My account</MenuItem>
+            <MenuItem  onClick={handleClose}><Link className="Menu-link" to="/">Home</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link className="Menu-link" to="/about">About</Link></MenuItem>
             <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
         </div>
