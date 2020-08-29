@@ -11,7 +11,8 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home';
 import About from './Components/About';
-import Menu from'./Components/Menu';
+import Menu from './Components/Menu';
+import Account from './Components/Account';
 
 
 
@@ -23,25 +24,14 @@ function App() {
     <Router> 
       <div>
         <Menu/>
-        <button>
-          Nav
-        </button>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-        
-              </li>
-            </ul>
       </div>
       <Switch>
 
         <Route path="/about">
           <About />
+        </Route>
+        <Route  path="/account">
+          <Account />
         </Route>
         <Route path="/">
           <Home />
